@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F3829F916DAA5DB00374ADA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3829F816DAA5DB00374ADA /* UIKit.framework */; };
+		5F3829F916DAA5DB00374ADA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3829F816DAA5DB00374ADA /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		5F3829FB16DAA5DB00374ADA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3829FA16DAA5DB00374ADA /* Foundation.framework */; };
 		5F3829FD16DAA5DB00374ADA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3829FC16DAA5DB00374ADA /* CoreGraphics.framework */; };
 		5F382A0316DAA5DB00374ADA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F382A0116DAA5DB00374ADA /* InfoPlist.strings */; };
@@ -23,6 +23,7 @@
 		5F382A1F16DAA5DB00374ADA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3829FA16DAA5DB00374ADA /* Foundation.framework */; };
 		5F382A2716DAA5DB00374ADA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F382A2516DAA5DB00374ADA /* InfoPlist.strings */; };
 		5F382A2A16DAA5DB00374ADA /* REACTION_TIMETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F382A2916DAA5DB00374ADA /* REACTION_TIMETests.m */; };
+		5F382A8316DAE76000374ADA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F382A8216DAE76000374ADA /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		5F382A2616DAA5DB00374ADA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5F382A2816DAA5DB00374ADA /* REACTION_TIMETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REACTION_TIMETests.h; sourceTree = "<group>"; };
 		5F382A2916DAA5DB00374ADA /* REACTION_TIMETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REACTION_TIMETests.m; sourceTree = "<group>"; };
+		5F382A8216DAE76000374ADA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		5F3829E916DAA5DB00374ADA = {
 			isa = PBXGroup;
 			children = (
+				5F382A8216DAE76000374ADA /* Default-568h@2x.png */,
 				5F3829FE16DAA5DB00374ADA /* REACTION TIME */,
 				5F382A2216DAA5DB00374ADA /* REACTION TIMETests */,
 				5F3829F716DAA5DB00374ADA /* Frameworks */,
@@ -236,6 +239,7 @@
 				5F382A0D16DAA5DB00374ADA /* Default@2x.png in Resources */,
 				5F382A0F16DAA5DB00374ADA /* Default-568h@2x.png in Resources */,
 				5F382A1216DAA5DB00374ADA /* MainStoryboard.storyboard in Resources */,
+				5F382A8316DAE76000374ADA /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +382,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REACTION TIME/REACTION TIME-Prefix.pch";
 				INFOPLIST_FILE = "REACTION TIME/REACTION TIME-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,7 +395,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REACTION TIME/REACTION TIME-Prefix.pch";
 				INFOPLIST_FILE = "REACTION TIME/REACTION TIME-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -406,6 +414,7 @@
 				GCC_PREFIX_HEADER = "REACTION TIME/REACTION TIME-Prefix.pch";
 				INFOPLIST_FILE = "REACTION TIMETests/REACTION TIMETests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -423,6 +432,7 @@
 				GCC_PREFIX_HEADER = "REACTION TIME/REACTION TIME-Prefix.pch";
 				INFOPLIST_FILE = "REACTION TIMETests/REACTION TIMETests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
